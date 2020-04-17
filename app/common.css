@@ -1,0 +1,80 @@
+html, body {
+    height:100%;
+}
+
+body {
+    background-image: url(./imgs/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: white;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: Space-between;
+    align-items: center;
+}
+
+.statistics-container {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.player, .selected-player {
+    display: flex;
+    flex-direction: row;
+}
+.selected-player {
+    border: 2px dashed white;
+}
+
+.player *, .selected-player * {
+    padding: 0;
+    margin: 0;
+}
+.statistic {
+    padding: 20px;
+    text-align: left;
+}
+
+.game-field {
+    width: 70%;
+    text-align: center;
+}
+
+.border {
+    cursor: pointer;
+    background-color: darkgray;
+}
+
+.border.left, .border.right {
+    height: 95px;
+    width: 5px;
+}
+
+.border.top, .border.bottom {
+    height: 5px;
+    width: 100px;
+}
+
+.empty-cell {
+    width: 100px;
+    height: 100px;
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.inner-cell {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.cells-row {
+    display: flex;
+    justify-content: center;
+ }
